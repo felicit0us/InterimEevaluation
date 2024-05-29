@@ -36,10 +36,10 @@ int DetectMax(int a, int b)
 }
 
 Console.WriteLine("Введите значение M:");
-int M = int.Parse(Console.ReadLine());
+int M = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите значение N:");
-int N = int.Parse(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine($"Натуральные числа в промежутке от {DetectMin(M, N)} до {DetectMax(M, N)}:");
 PrintNaturalNumbers(DetectMin(M, N), DetectMax(M, N));
