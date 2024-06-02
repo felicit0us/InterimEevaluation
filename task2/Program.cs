@@ -20,8 +20,13 @@ int Ackermann(int n, int m)
     {
         return Ackermann(n - 1, 1);
     }
-    else
+    else if (m > 0 && n > 0)
     {
         return Ackermann(n - 1, Ackermann(n, m - 1));
+    }
+    else
+    {   
+        Console.WriteLine("Параметры функции Аккермана должны быть неотрицательными числами.");
+        return 0;
     }
  }
